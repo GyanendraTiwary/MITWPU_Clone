@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body >
+    
+    <h1>Signup Form</h1>
+    <hr class="main-divider-line">
+    <form id="main-box">
+        <!-- personal info entry -->
+        <div id="personal-div" style="background-color: rgb(246, 255, 253); margin: 5px;">
+            <label for="first-name" >First Name</label>
+            <input type="text" placeholder="Kuldeeep" id="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" placeholder="Pandey" id="last-name">
+            <br>
+            <label for="dob">Date of Bitrh</label>
+            <input type="date" id="dob">
+            <label for="profile-picture">Profile Picture</label>
+            <input type="file" accept="image/png, image/jpeg" id="profile-picture">
+            <hr class="section-divider-line">
+        </div>
+        <!-- address entry -->
+        <div id="address-div" style="background-color: rgb(234, 242, 255); margin: 5px;" >
+            <label for="address-line1" style="width: 100%;">Address</label>
+            <br>
+            <input type="text" placeholder="Line 1" id="address-line1" class="address-line">
+            <input type="text" placeholder="Line 2" id="address-line2" class="address-line">
+            <input type="text" placeholder="Line 3" id="address-line3" class="address-line">
+               <!-- city entry -->
+            <label for="city">City</label>
+            <input type="text" placeholder="Mumbai" id="city">
+               <!-- state dropdown -->
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="select">Select</option>
+                <option value="Maharashtra">Maharahtra</option>
+                <option value="Gujrat">Gujrat</option>
+                <option value="Uttar-Pradesh">Uttar-Pradesh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Tamil-Nadu">Tamil-Nadu</option>
+            </select>
+                <!-- country dropdown -->
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="select">Select</option>
+                <option value="Maharashtra">India</option>
+                <option value="Gujrat">Bharat</option>
+                <option value="Uttar-Pradesh">Hindustan</option>
+            </select>
+                <!-- pincode entry -->
+            <label for="pincode">Pincode</label>
+            <input type="number" placeholder="421305" id="pincode" maxlength="6" minlength="6">
+            <hr class="section-divider-line">
+        </div>
+        <!-- contact details -->
+        <div id="contact-div" style="background-color: rgb(255, 250, 243); margin: 5px;">
+             <!-- mobile entry -->
+            <label for="mobile">Mobile</label>
+            <input type="number" placeholder="10 digit only" id="mobile" maxlength="10" minlength="10">
+             <!-- email entry -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="abc@something.com">
+            <hr class="section-divider-line">
+        </div>
+         <!-- carrer details -->
+        <div id="carrer-details-div">
+            <h2 style="color: white;" >Carrer Details</h2><br>
+            <!-- skills entry -->
+            <div style="margin: 5px; padding: 5px; width: 40%; display: inline-block; background-color: rgb(170, 200, 35); border-bottom: 2px solid black;">
+                <label for="skill1" style="width: 100%;">Skills</label>
+                <hr>
+                <input type="text" placeholder="Skill 1" id="skill1" class="skill-lines">
+                <input type="text" placeholder="Skill 2" id="skill2" class="skill-lines">
+                <input type="text" placeholder="Skill 3" id="skill3" class="skill-lines">
+                <input type="text" placeholder="Skill 4" id="skill4" class="skill-lines">
+            </div>
+                <!-- Education entry -->
+            <div style="margin: 5px; padding: 5px; width: 55%; display: inline-block; float: right; background-color: rgb(190, 53, 48); border-bottom: 2px solid black;">
+                <label for="highschool" style="width: 100%;">Education</label>
+                <hr>
+                <input type="text" placeholder="10th School" id="higschool" class="edu-lines">
+                <input type="number" placeholder="Score (%)" min="0" max="100" id="10thscore" class="scores">
+                <input type="text" placeholder="12th School" id="plustwo" class="edu-lines">
+                <input type="number" placeholder="Score (%)" min="0" max="100" id="12thscore" class="scores">
+                <input type="text" placeholder="Graduation College" id="graduation" class="edu-lines">
+                <input type="number" placeholder="CGPA"  min="0" max="10" id="ugscore" class="scores">
+                <input type="text" placeholder="Post-Graduation College" id="postgraduation" class="edu-lines">
+                <input type="number" placeholder="CGPA" min="0" max="10" id="pgscore" class="scores"  style="float: right;">
+            </div>
+                <!-- projects entry -->
+            <div style="margin: 5px; padding: 5px; width: 55%; display: inline-block; float: left; background-color: rgb(0, 255, 183); border-bottom: 2px solid black;">
+                <label for="project1" style="width: 100%;">Project</label>
+                <hr>
+                <input type="text" placeholder="1 paste link here" id="project1" class="project-lines">
+                <input type="text" placeholder="2 paste link here" id="project2" class="project-lines">
+                <input type="text" placeholder="3 paste link here" id="project3" class="project-lines">
+             </div>
+              <!-- papers entry -->
+            <div style="margin: 5px; padding: 5px; width: 40%; display: inline-block; float: right; background-color: rgb(0, 153, 255); border-bottom: 2px solid black;">
+                <label for="papaer1" style="width: 100%;">Papers</label>
+                <hr>
+                <input type="text" placeholder="1 paste link here" id="papaer1" class="paper-lines">
+                <input type="text" placeholder="2 paste link here" id="papaer2" class="paper-lines">
+                <input type="text" placeholder="3 paste link here" id="papaer3" class="paper-lines">
+                
+            </div>
+        </div>
+            <!-- submit button -->
+        <button type="button"  id="submit-btn" onclick="submitfun(); show_result()">
+            Submit
+        </button>
+        
+    </form>
+    <script>
+        // for alert name
+        function submitfun() {
+            var fname = document.getElementById("first-name").value;
+            var lname = document.getElementById("last-name").value;
+            alert('Submited for '+fname+' '+lname);
+        }
+    </script>
+
+
+    <!-- result box -->
+    <div id="resultbox" style="border: 1px solid red;">
+        <h3>User Info</h3>
+        <hr>
+        <pre>
+ <h5>Name: </h5><span id="result-name" class="result">Demo</span>       <h5>DOB: </h5><span id="result-dob" class="result">Demo</span>
+ <img src="demopp.png" alt="profile photo" id="result-pp">
+ <h5>Address: </h5><span id="result-addr" class="result">demo</span>
+
+ <h5>City: </h5><span id="result-acity" class="result">demo</span>       <h5>State: </h5><span id="result-astate" class="result">demo</span>       <h5>Country: </h5><span id="result-acountry" class="result">demo</span>      <h5>Pincode: </h5><span id="result-apin" class="result">demo</span> 
+ 
+ <h5>Mobile: </h5><span id="result-phone" class="result">0000000000</span>      <h5>Email: </h5><span id="result-email" class="result">demo@demo.com</span> 
+ 
+ <h5>Skills</h5>          <h5>Education</h5>
+ <span id="result-skill1" class="result">demo</span>           <span id="result-edu10" class="result">10th: demo   00%</span>
+ <span id="result-skill2" class="result">demo</span>           <span id="result-edu12" class="result">12th: demo   00%</span>
+ <span id="result-skill3" class="result">demo</span>           <span id="result-eduUG" class="result">UG:   demo   00 CGPA</span>
+ <span id="result-skill4" class="result">demo</span>           <span id="result-eduPG" class="result">PG:   demo   00 CGPA</span>
+
+ <h5>Projects</h5>        <h5>Papers</h5>
+ <span id="result-project1" class="result">demo</span>           <span id="result-paper1" class="result">demo</span>
+ <span id="result-project2" class="result">demo</span>           <span id="result-paper2" class="result">demo</span>
+ <span id="result-project3" class="result">demo</span>           <span id="result-paper3" class="result">demo</span>
+
+ <hr>
+        </pre>  
+    </div>
+    
+    <script>
+        var fname = document.getElementById("first-name");
+        var lname = document.getElementById("last-name");
+        var Dob = document.getElementById("dob");
+        var addrl1 = document.getElementById("address-line1");
+        var addrl2 = document.getElementById("address-line2");
+        var addrl3 = document.getElementById("address-line3");
+        var City = document.getElementById("city");
+        var State =  document.getElementById("state");
+        var Country = document.getElementById("country");
+        var Pincode = document.getElementById("pincode");
+        var Mobile = document.getElementById("mobile");
+        var Email =  document.getElementById("email");
+
+
+        function show_result()
+        {
+            document.getElementById("result-name").innerHTML = fname.value+" "+lname.value;
+            document.getElementById("result-dob").innerHTML = Dob.value;
+            document.getElementById("result-addr").innerHTML = addrl1.value+", "+addrl2.value+", "+addrl3.value;
+            document.getElementById("result-acity").innerHTML = City.value;
+            document.getElementById("result-astate").innerHTML = State.value;
+            document.getElementById("result-acountry").innerHTML = Country.value;
+            document.getElementById('result-apin').innerHTML = Pincode.value;
+            document.getElementById("result-phone").innerHTML = Mobile.value;
+            document.getElementById("result-email").innerHTML = Email.value;
+
+
+
+
+            
+
+            document.getElementById("resultbox").style.display = "block";
+        }
+    </script>
+   
+
+</body>
+</html>
